@@ -294,16 +294,19 @@ Spark UDF / Ray UDF ≈ 2.56×
 These results are specific to the tested hardware, cluster configuration, dataset, and execution environment.
 
 ---
+# 8. AI Index
 
-# 8. AI-Assisted Development
+I used AI mainly when I was stuck with some parts of the code or needed help understanding the Spark and Ray implementation.
 
-AI assistance was used for code translation, explanation, and structuring parts of the implementation.
+It helped me with:
+- understanding and converting parts of the preprocessing code between Spark and Ray,
+- fixing small coding issues,
+- checking whether both pipelines were doing the same preprocessing steps,
+- and organizing the benchmark and report.
 
-Cluster setup, networking, worker configuration, execution, benchmarking, and verification were performed manually.
+I did the cluster setup and testing myself. This includes starting the Spark Master and workers, starting the Ray head and workers, running both pipelines, checking the dashboards, and recording the execution times.
 
-The benchmark values in this repository are from actual executions and are not synthetic benchmark results.
-
----
+The results shown in this repository are from my actual runs on the dataset. I did not use any simulated or synthetic benchmark results.
 
 # 9. Report
 
@@ -343,8 +346,4 @@ ray stop --force
 
 ---
 
-## Author
 
-**M. Sai Jagadeesh**
-
-IIT Madras
